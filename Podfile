@@ -6,5 +6,8 @@ target 'MyWeek' do
   use_frameworks!
 
   # Pods for MyWeek
-
+  pod 'SnapKit'
+  pod 'Firebase'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
 end

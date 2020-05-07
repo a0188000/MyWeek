@@ -3,25 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB39312D24527B7300389C5D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB39312C24527B7300389C5D /* WeekView.swift */; };
+		AB39313024527BBB00389C5D /* Declarative.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB39312F24527BBB00389C5D /* Declarative.swift */; };
+		AB6BC9D8245FA7DD007B9F01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB6BC9D7245FA7DD007B9F01 /* GoogleService-Info.plist */; };
+		AB6BC9DA245FB027007B9F01 /* Date + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BC9D9245FB027007B9F01 /* Date + Extension.swift */; };
+		AB6BC9DC245FB2FC007B9F01 /* Double + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BC9DB245FB2FC007B9F01 /* Double + Extension.swift */; };
+		AB6BC9E1245FEDA6007B9F01 /* GYM_Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BC9E0245FEDA6007B9F01 /* GYM_Student.swift */; };
+		AB6BC9E3245FEF6F007B9F01 /* Gym_DayCurriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BC9E2245FEF6F007B9F01 /* Gym_DayCurriculum.swift */; };
+		AB6BC9E5245FF15A007B9F01 /* Gym_WeekCurriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BC9E4245FF15A007B9F01 /* Gym_WeekCurriculum.swift */; };
+		AB6BC9EA2460F9E9007B9F01 /* StudentSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BC9E92460F9E9007B9F01 /* StudentSystemViewController.swift */; };
+		AB6BC9EC2460FA7C007B9F01 /* UITableView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BC9EB2460FA7C007B9F01 /* UITableView + Extension.swift */; };
+		AB6BC9EE2460FA89007B9F01 /* UITableViewCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BC9ED2460FA89007B9F01 /* UITableViewCell + Extension.swift */; };
+		AB6CD4DE24610BA400DDD3AA /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CD4DD24610BA400DDD3AA /* FirebaseManager.swift */; };
+		AB6CD4E22462878500DDD3AA /* SelectStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CD4E12462878500DDD3AA /* SelectStudentViewController.swift */; };
+		AB6CD4E424628AEF00DDD3AA /* StudentFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CD4E324628AEF00DDD3AA /* StudentFlowLayout.swift */; };
+		AB6CD4E824628BD200DDD3AA /* StudentItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CD4E724628BD200DDD3AA /* StudentItemCell.swift */; };
+		AB6CD4EC24628E2300DDD3AA /* GeneralHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CD4EB24628E2300DDD3AA /* GeneralHelper.swift */; };
+		AB6CD4EE24628FCC00DDD3AA /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CD4ED24628FCC00DDD3AA /* UIColor + Extension.swift */; };
+		AB6CD4F02463D8BD00DDD3AA /* StudentTypeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CD4EF2463D8BD00DDD3AA /* StudentTypeCode.swift */; };
 		AB83C03B245279DE00A0C49D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB83C03A245279DE00A0C49D /* AppDelegate.swift */; };
-		AB83C03D245279DE00A0C49D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB83C03C245279DE00A0C49D /* ViewController.swift */; };
-		AB83C040245279DE00A0C49D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB83C03E245279DE00A0C49D /* Main.storyboard */; };
+		AB83C03D245279DE00A0C49D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB83C03C245279DE00A0C49D /* MainViewController.swift */; };
 		AB83C042245279E100A0C49D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB83C041245279E100A0C49D /* Assets.xcassets */; };
 		AB83C045245279E100A0C49D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB83C043245279E100A0C49D /* LaunchScreen.storyboard */; };
+		ABFEE8402456A6C9005CCCC8 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFEE83F2456A6C9005CCCC8 /* TimeView.swift */; };
+		ABFEE84224594C11005CCCC8 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFEE84124594C11005CCCC8 /* DayCell.swift */; };
+		ABFEE84524594C23005CCCC8 /* UICollectionView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFEE84424594C23005CCCC8 /* UICollectionView + Extension.swift */; };
+		ABFEE84724594C86005CCCC8 /* UICollectionViewCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFEE84624594C86005CCCC8 /* UICollectionViewCell + Extension.swift */; };
+		FF98959C375F0D2591F3BA22 /* Pods_MyWeek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C525357BA4DB0CE7FF569F1 /* Pods_MyWeek.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C525357BA4DB0CE7FF569F1 /* Pods_MyWeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		281A0A48189CD9E248B902AE /* Pods-MyWeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeek.debug.xcconfig"; path = "Target Support Files/Pods-MyWeek/Pods-MyWeek.debug.xcconfig"; sourceTree = "<group>"; };
+		AB39312C24527B7300389C5D /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		AB39312F24527BBB00389C5D /* Declarative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Declarative.swift; sourceTree = "<group>"; };
+		AB6BC9D7245FA7DD007B9F01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB6BC9D9245FB027007B9F01 /* Date + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extension.swift"; sourceTree = "<group>"; };
+		AB6BC9DB245FB2FC007B9F01 /* Double + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double + Extension.swift"; sourceTree = "<group>"; };
+		AB6BC9E0245FEDA6007B9F01 /* GYM_Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYM_Student.swift; sourceTree = "<group>"; };
+		AB6BC9E2245FEF6F007B9F01 /* Gym_DayCurriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_DayCurriculum.swift; sourceTree = "<group>"; };
+		AB6BC9E4245FF15A007B9F01 /* Gym_WeekCurriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_WeekCurriculum.swift; sourceTree = "<group>"; };
+		AB6BC9E92460F9E9007B9F01 /* StudentSystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSystemViewController.swift; sourceTree = "<group>"; };
+		AB6BC9EB2460FA7C007B9F01 /* UITableView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + Extension.swift"; sourceTree = "<group>"; };
+		AB6BC9ED2460FA89007B9F01 /* UITableViewCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell + Extension.swift"; sourceTree = "<group>"; };
+		AB6CD4DD24610BA400DDD3AA /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		AB6CD4E12462878500DDD3AA /* SelectStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStudentViewController.swift; sourceTree = "<group>"; };
+		AB6CD4E324628AEF00DDD3AA /* StudentFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentFlowLayout.swift; sourceTree = "<group>"; };
+		AB6CD4E724628BD200DDD3AA /* StudentItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentItemCell.swift; sourceTree = "<group>"; };
+		AB6CD4EB24628E2300DDD3AA /* GeneralHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHelper.swift; sourceTree = "<group>"; };
+		AB6CD4ED24628FCC00DDD3AA /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		AB6CD4EF2463D8BD00DDD3AA /* StudentTypeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTypeCode.swift; sourceTree = "<group>"; };
 		AB83C037245279DE00A0C49D /* MyWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB83C03A245279DE00A0C49D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB83C03C245279DE00A0C49D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AB83C03F245279DE00A0C49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB83C03C245279DE00A0C49D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AB83C041245279E100A0C49D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB83C044245279E100A0C49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB83C046245279E100A0C49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABFEE83F2456A6C9005CCCC8 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		ABFEE84124594C11005CCCC8 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		ABFEE84424594C23005CCCC8 /* UICollectionView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extension.swift"; sourceTree = "<group>"; };
+		ABFEE84624594C86005CCCC8 /* UICollectionViewCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell + Extension.swift"; sourceTree = "<group>"; };
+		DE55CF39719AF054EBD34C53 /* Pods-MyWeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeek.release.xcconfig"; path = "Target Support Files/Pods-MyWeek/Pods-MyWeek.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +75,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF98959C375F0D2591F3BA22 /* Pods_MyWeek.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F6617504B117A4D2E81F687 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C525357BA4DB0CE7FF569F1 /* Pods_MyWeek.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB39312E24527BB500389C5D /* Declarative */ = {
+			isa = PBXGroup;
+			children = (
+				AB39312F24527BBB00389C5D /* Declarative.swift */,
+			);
+			path = Declarative;
+			sourceTree = "<group>";
+		};
+		AB6BC9D5245FA649007B9F01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABFEE83F2456A6C9005CCCC8 /* TimeView.swift */,
+				AB39312C24527B7300389C5D /* WeekView.swift */,
+				ABFEE84124594C11005CCCC8 /* DayCell.swift */,
+				AB6CD4E324628AEF00DDD3AA /* StudentFlowLayout.swift */,
+				AB6CD4E724628BD200DDD3AA /* StudentItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB6BC9D6245FA7C4007B9F01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB6BC9D7245FA7DD007B9F01 /* GoogleService-Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		AB6BC9DF245FED89007B9F01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB6BC9E4245FF15A007B9F01 /* Gym_WeekCurriculum.swift */,
+				AB6BC9E2245FEF6F007B9F01 /* Gym_DayCurriculum.swift */,
+				AB6BC9E0245FEDA6007B9F01 /* GYM_Student.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB6BC9E82460F9C2007B9F01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB83C03C245279DE00A0C49D /* MainViewController.swift */,
+				AB6BC9E92460F9E9007B9F01 /* StudentSystemViewController.swift */,
+				AB6CD4E12462878500DDD3AA /* SelectStudentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB6CD4DC24610B9100DDD3AA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AB6CD4DD24610BA400DDD3AA /* FirebaseManager.swift */,
+				AB6CD4EB24628E2300DDD3AA /* GeneralHelper.swift */,
+				AB6CD4EF2463D8BD00DDD3AA /* StudentTypeCode.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		AB83C02E245279DE00A0C49D = {
 			isa = PBXGroup;
 			children = (
 				AB83C039245279DE00A0C49D /* MyWeek */,
 				AB83C038245279DE00A0C49D /* Products */,
+				EBAEEE1B151C818ED02ECC75 /* Pods */,
+				5F6617504B117A4D2E81F687 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +170,41 @@
 			isa = PBXGroup;
 			children = (
 				AB83C03A245279DE00A0C49D /* AppDelegate.swift */,
-				AB83C03C245279DE00A0C49D /* ViewController.swift */,
-				AB83C03E245279DE00A0C49D /* Main.storyboard */,
+				AB39312E24527BB500389C5D /* Declarative */,
+				AB6CD4DC24610B9100DDD3AA /* Utilities */,
+				ABFEE84324594C14005CCCC8 /* Extension */,
+				AB6BC9D5245FA649007B9F01 /* View */,
+				AB6BC9DF245FED89007B9F01 /* Model */,
+				AB6BC9E82460F9C2007B9F01 /* Controller */,
 				AB83C041245279E100A0C49D /* Assets.xcassets */,
 				AB83C043245279E100A0C49D /* LaunchScreen.storyboard */,
 				AB83C046245279E100A0C49D /* Info.plist */,
+				AB6BC9D6245FA7C4007B9F01 /* Support Files */,
 			);
 			path = MyWeek;
+			sourceTree = "<group>";
+		};
+		ABFEE84324594C14005CCCC8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ABFEE84424594C23005CCCC8 /* UICollectionView + Extension.swift */,
+				ABFEE84624594C86005CCCC8 /* UICollectionViewCell + Extension.swift */,
+				AB6BC9EB2460FA7C007B9F01 /* UITableView + Extension.swift */,
+				AB6BC9ED2460FA89007B9F01 /* UITableViewCell + Extension.swift */,
+				AB6BC9D9245FB027007B9F01 /* Date + Extension.swift */,
+				AB6BC9DB245FB2FC007B9F01 /* Double + Extension.swift */,
+				AB6CD4ED24628FCC00DDD3AA /* UIColor + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EBAEEE1B151C818ED02ECC75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				281A0A48189CD9E248B902AE /* Pods-MyWeek.debug.xcconfig */,
+				DE55CF39719AF054EBD34C53 /* Pods-MyWeek.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB83C049245279E100A0C49D /* Build configuration list for PBXNativeTarget "MyWeek" */;
 			buildPhases = (
+				4E160C7D9A26D7895ECF4FE5 /* [CP] Check Pods Manifest.lock */,
 				AB83C033245279DE00A0C49D /* Sources */,
 				AB83C034245279DE00A0C49D /* Frameworks */,
 				AB83C035245279DE00A0C49D /* Resources */,
+				C8288491DF2C016E440DA4EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,34 +268,89 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB83C045245279E100A0C49D /* LaunchScreen.storyboard in Resources */,
+				AB6BC9D8245FA7DD007B9F01 /* GoogleService-Info.plist in Resources */,
 				AB83C042245279E100A0C49D /* Assets.xcassets in Resources */,
-				AB83C040245279DE00A0C49D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E160C7D9A26D7895ECF4FE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWeek-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8288491DF2C016E440DA4EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWeek/Pods-MyWeek-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWeek/Pods-MyWeek-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyWeek/Pods-MyWeek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB83C033245279DE00A0C49D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB83C03D245279DE00A0C49D /* ViewController.swift in Sources */,
+				AB6BC9DC245FB2FC007B9F01 /* Double + Extension.swift in Sources */,
+				AB6BC9EA2460F9E9007B9F01 /* StudentSystemViewController.swift in Sources */,
+				AB39313024527BBB00389C5D /* Declarative.swift in Sources */,
+				ABFEE84524594C23005CCCC8 /* UICollectionView + Extension.swift in Sources */,
+				AB6CD4E22462878500DDD3AA /* SelectStudentViewController.swift in Sources */,
+				AB6BC9DA245FB027007B9F01 /* Date + Extension.swift in Sources */,
+				AB39312D24527B7300389C5D /* WeekView.swift in Sources */,
+				AB83C03D245279DE00A0C49D /* MainViewController.swift in Sources */,
+				AB6CD4F02463D8BD00DDD3AA /* StudentTypeCode.swift in Sources */,
 				AB83C03B245279DE00A0C49D /* AppDelegate.swift in Sources */,
+				AB6BC9E5245FF15A007B9F01 /* Gym_WeekCurriculum.swift in Sources */,
+				ABFEE84224594C11005CCCC8 /* DayCell.swift in Sources */,
+				AB6BC9E1245FEDA6007B9F01 /* GYM_Student.swift in Sources */,
+				ABFEE84724594C86005CCCC8 /* UICollectionViewCell + Extension.swift in Sources */,
+				ABFEE8402456A6C9005CCCC8 /* TimeView.swift in Sources */,
+				AB6CD4E824628BD200DDD3AA /* StudentItemCell.swift in Sources */,
+				AB6CD4EE24628FCC00DDD3AA /* UIColor + Extension.swift in Sources */,
+				AB6CD4E424628AEF00DDD3AA /* StudentFlowLayout.swift in Sources */,
+				AB6BC9EC2460FA7C007B9F01 /* UITableView + Extension.swift in Sources */,
+				AB6CD4EC24628E2300DDD3AA /* GeneralHelper.swift in Sources */,
+				AB6BC9E3245FEF6F007B9F01 /* Gym_DayCurriculum.swift in Sources */,
+				AB6BC9EE2460FA89007B9F01 /* UITableViewCell + Extension.swift in Sources */,
+				AB6CD4DE24610BA400DDD3AA /* FirebaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB83C03E245279DE00A0C49D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB83C03F245279DE00A0C49D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AB83C043245279E100A0C49D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +480,7 @@
 		};
 		AB83C04A245279E100A0C49D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 281A0A48189CD9E248B902AE /* Pods-MyWeek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,12 +493,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiTing.MyWeek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AB83C04B245279E100A0C49D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE55CF39719AF054EBD34C53 /* Pods-MyWeek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +512,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiTing.MyWeek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,47 @@
+Last login: Mon May  4 10:02:11 on ttys003
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+weitingdeiMac:~ evertrust$ cd /Users/evertrust/Desktop/MyHealthManagement 
+weitingdeiMac:MyHealthManagement evertrust$ vim .gitignore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+Pods/
+
+# Lock File
+Podfile.lock
+yarn.lock
+
