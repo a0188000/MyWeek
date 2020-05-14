@@ -32,26 +32,27 @@ class WeekView: UIScrollView {
         super.layoutSubviews()
         var label = UIView()
         subviews.filter { $0 is UILabel }.forEach { label = $0 }
-        contentSize = .init(width: label.bounds.width * 7, height: label.bounds.height)
+        contentSize = .init(width: label.bounds.width * 31, height: label.bounds.height)
         showsHorizontalScrollIndicator = false
     }
     
     private func configure() {
-        var day = 1
-        ["ㄧ", "二", "三", "四", "五", "六", "日"].forEach { week in
+        let month = Calendar.current.component(.month, from: Date())
+        let today = Calendar.current.component(.day, from: Date())
+        (1...31).forEach { day in
             let label = UILabel {
                 $0.tag = day
-                $0.text = week
+                $0.text = "\(month)/\(day)"
                 $0.textColor = .black
                 $0.textAlignment = .center
-                $0.backgroundColor = week.isEmpty ? .clear : .lightGray
+                $0.backgroundColor = today == day ? UIColor(red: 0, green: 236, blue: 0) : .lightGray
                 $0.isUserInteractionEnabled = true
                 $0.addGestureRecognizer(configureRecognizer())
             }
             
             addSubview(label)
             
-            let width = 65//week.isEmpty ? 32 : ((UIScreen.main.bounds.width - 32) / 7) - 1
+            let width = 65
             if let lastLabel = lastLabel {
                 label.snp.makeConstraints { (make) in
                     make.left.equalTo(lastLabel.snp.right).offset(1)
@@ -68,7 +69,6 @@ class WeekView: UIScrollView {
                 }
             }
             lastLabel = label
-            day += 1
         }
     }
     
@@ -77,7 +77,7 @@ class WeekView: UIScrollView {
     }
     
     @objc private func longPressed(_ recognizer: UITapGestureRecognizer) {
-        guard let label = recognizer.view as? UILabel else { return }
+        guard let label = recognizer.view as? UILabel, label.tag != 0 else { return }
         weekDelegate?.weekView(self, userPressDay: label.tag)
     }
     

@@ -7,7 +7,14 @@ target 'MyWeek' do
 
   # Pods for MyWeek
   pod 'SnapKit'
-  pod 'Firebase'
+#  pod 'Firebase'
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
+  
+  target 'MyWeek-S' do
+    pod 'SnapKit'
+#    pod 'Firebase'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Database'
+    end
 end

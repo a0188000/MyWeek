@@ -35,6 +35,7 @@ class StudentSystemViewController: UIViewController {
     
     private func setTableView() {
         tableView = UITableView {
+            $0.tableFooterView = UIView()
             $0.weekRegister(UITableViewCell.self)
             $0.delegate = self
             $0.dataSource = self
@@ -73,13 +74,23 @@ class StudentSystemViewController: UIViewController {
         let alert = UIAlertController(title: "新增學生", message: nil, preferredStyle: .alert)
         let confirmAction = UIAlertAction(title: "新增", style: .default) { (action) in
             guard let studentname = alert.textFields?.first?.text else { return }
-            self.saveStudentName(studentname)
+            FirebaseManager.shared.fetchStudent(studentname) { (students) in
+                if students.isEmpty {
+                    self.saveStudentName(studentname)
+                } else {
+                    self.handleRepeatSutdent()
+                }
+            }
         }
         let cancelAction = UIAlertAction(title: "取消", style: .default, handler: nil)
         alert.addTextField { $0.placeholder = "請輸入學生姓名" }
         alert.addAction(cancelAction)
         alert.addAction(confirmAction)
         present(alert, animated: true, completion: nil)
+    }
+    
+    private func handleRepeatSutdent() {
+        showAlert("Oops! 學生重複囉，請重新輸入！", message: nil, confirmTitle: "確定")
     }
 }
 
@@ -90,7 +101,23 @@ extension StudentSystemViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.weekDequeueReusableCell(UITableViewCell.self, indexPath: indexPath)
+        cell.selectionStyle = .none
         cell.textLabel?.text = students[indexPath.row].name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "刪除"
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let student = students[indexPath.row]
+        showAlert(nil, message: "確定要刪除該學生資料嗎？刪除後課表上的資料並不會同步修改哦～", confirmTitle: "刪除", comfireActionHandle: { (_) in
+            FirebaseManager.shared.deleteStudent(student)
+        }, cancelTitle: "下次再說！", cancelActionHandle: nil)
     }
 }

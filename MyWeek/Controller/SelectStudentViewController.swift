@@ -14,8 +14,8 @@ class SelectStudentViewController: UIViewController {
     private var doneButtonItem: UIBarButtonItem!
     
     private var students: [Gym_Student] = []
-    private var statusStudent: [Gym_Student] = [.init(name: "忙碌", typeCode: .busy),
-                                                .init(name: "空堂", typeCode: .normal),
+    private var statusStudent: [Gym_Student] = [.init(name: "空堂", typeCode: .normal),
+                                                .init(name: "忙碌", typeCode: .busy),
                                                 .init(name: "放假", typeCode: .holiday)]
     private var selectedStudent: Gym_Student?
     private var newSelectedStudent: Gym_Student? {
@@ -23,7 +23,7 @@ class SelectStudentViewController: UIViewController {
             doneButtonItem.isEnabled = newSelectedStudent != nil
         }
     }
-    private var week: Int!
+    private var month: Int!
     private var day: Int!
     private var postion: Int!
     
@@ -31,9 +31,9 @@ class SelectStudentViewController: UIViewController {
         return statusStudent + students
     }
     
-    convenience init(week: Int, day: Int, postion: Int, students: [Gym_Student], selectedStudent: Gym_Student?) {
+    convenience init(month: Int, day: Int, postion: Int, students: [Gym_Student], selectedStudent: Gym_Student?) {
         self.init()
-        self.week = week
+        self.month = month
         self.day = day
         self.postion = postion
         self.students = students
@@ -108,7 +108,7 @@ class SelectStudentViewController: UIViewController {
     }
     
     @objc private func doneButtonPressed(_ sender: UIButton) {
-        FirebaseManager.shared.updateDayCurriculumStudent(week: week, day: day, postion: postion, oldStudent: selectedStudent, newStudent: newSelectedStudent!, completionHandle: {
+        FirebaseManager.shared.updateDayCurriculumStudent(month: month, day: day, postion: postion, oldStudent: selectedStudent, newStudent: newSelectedStudent!, completionHandle: {
             self.dismiss(animated: true, completion: nil)
         })
     }

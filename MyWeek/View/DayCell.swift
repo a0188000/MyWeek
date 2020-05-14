@@ -12,6 +12,7 @@ class DayCell: UICollectionViewCell {
     
     private var studentLabel = UILabel {
         $0.textAlignment = .center
+        $0.adjustsFontSizeToFitWidth = true
     }
     
     override init(frame: CGRect) {
@@ -22,13 +23,11 @@ class DayCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        studentLabel.text = nil
-        contentView.backgroundColor = .white
+        defaultConfigure()
     }
     
     private func setView() {
         contentView.addSubview(studentLabel)
-        
         setConstraints()
     }
     
@@ -36,6 +35,11 @@ class DayCell: UICollectionViewCell {
         studentLabel.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
+    }
+    
+    func defaultConfigure() {
+        studentLabel.text = nil
+        contentView.backgroundColor = .white
     }
     
     func setContent(_ student: Gym_Student) {
@@ -46,7 +50,9 @@ class DayCell: UICollectionViewCell {
         case .normal, .busy, .holiday:
             studentLabel.text = nil
         case .scheduled:
+            #if COAHDEBUG || COAHRELEASE
             studentLabel.text = student.name
+            #endif
         }
         contentView.backgroundColor = typeCode.backgroundColor
     }

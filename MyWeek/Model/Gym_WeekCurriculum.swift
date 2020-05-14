@@ -15,7 +15,6 @@ struct Gym_WeekCurriculum {
     init(week: Int, dictionary: [String: Any]) {
         self.week = week
         for (day, element) in dictionary {
-            var newDay = day.dropFirst()
             guard
                 let elementDic = element as? [String: Any],
                 let studentsDic = elementDic["Students"] as? [String: Any]

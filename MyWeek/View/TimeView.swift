@@ -19,7 +19,11 @@ class TimeView: UIView {
     var lastLabel: UILabel?
     
     private func configureUI() {
-        for i in 8..<24 {
+        var height = (UIScreen.main.bounds.height - 89 - 13) / 14
+        if UIScreen.main.bounds.height >= 812 {
+            height = (UIScreen.main.bounds.height - 113 - 13) / 14
+        }
+        for i in 10..<24 {
             let label = UILabel {
                 $0.text = "\(i):00\r｜\r\(i + 1):00"
                 $0.numberOfLines = 0
@@ -29,8 +33,6 @@ class TimeView: UIView {
                 $0.adjustsFontSizeToFitWidth = true
             }
             addSubview(label)
-            
-            let height = Int((UIScreen.main.bounds.height - 112) / 16) - 1
             
             if let lastLabel = self.lastLabel {
                 label.snp.makeConstraints { (make) in
