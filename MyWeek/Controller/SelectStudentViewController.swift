@@ -44,7 +44,8 @@ class SelectStudentViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "安排學生"
+//        title = "安排學生"
+        title = "安排客人"
         view.backgroundColor = .white
         configureUI()
     }

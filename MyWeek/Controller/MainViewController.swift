@@ -48,7 +48,8 @@ class MainViewController: UIViewController {
     
     private func configureNavBarItem() {
         let changeItem = UIBarButtonItem(customView: UIButton(type: .system, {
-            $0.setTitle("更換教練", for: .normal)
+//            $0.setTitle("更換教練", for: .normal)
+            $0.setTitle("更換設計師", for: .normal)
             $0.addTarget(self, action: #selector(changeCoach(_:)), for: .touchUpInside)
         }))
         #if STUDENTDEBUG || STUDENTRELEASE
@@ -56,13 +57,15 @@ class MainViewController: UIViewController {
         #endif
         
         let studentItem = UIBarButtonItem(customView: UIButton(type: .system, {
-            $0.setTitle("學生管理", for: .normal)
+//            $0.setTitle("學生管理", for: .normal)
+            $0.setTitle("客人管理", for: .normal)
             $0.addTarget(self, action: #selector(studentButtonPressed(_:)), for: .touchUpInside)
         }))
         studentItem.isEnabled = IsOwner
         
         let changeItme = UIBarButtonItem(customView: UIButton(type: .system, {
-            $0.setTitle("換教練", for: .normal)
+//            $0.setTitle("換教練", for: .normal)
+            $0.setTitle("換設計師", for: .normal)
             $0.addTarget(self, action: #selector(changeCoach(_:)), for: .touchUpInside)
         }))
         

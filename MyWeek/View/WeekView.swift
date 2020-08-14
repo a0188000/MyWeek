@@ -37,8 +37,16 @@ class WeekView: UIScrollView {
     }
     
     private func configure() {
+        let year = Calendar.current.component(.year, from: Date())
         let month = Calendar.current.component(.month, from: Date())
         let today = Calendar.current.component(.day, from: Date())
+        
+        let formatter = DateFormatter {
+            $0.dateFormat = "yyyy-MM-dd"
+        }
+        let dayTimeStamp = formatter.date(from: "\(year)-\(month)-\(today)") ?? Date()
+        var weekDay = Calendar.current.component(.weekday, from: dayTimeStamp) - 1
+        weekDay = weekDay == 0 ? 7 : weekDay
         (1...31).forEach { day in
             let label = UILabel {
                 $0.tag = day

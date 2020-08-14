@@ -24,7 +24,8 @@ class SelectCoachViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "選擇教練"
+//        title = "選擇教練"
+        title = "選擇設計師"
         view.backgroundColor = .lightGray
         configureUI()
         fetchCoachs()
@@ -76,7 +77,8 @@ class SelectCoachViewController: UIViewController {
     
     @objc private func doneButtonPressed(_ sender: UIButton) {
         #if COAHDEBUG || COAHRELEASE
-        let alert = UIAlertController(title: "請選擇", message: "管理課表呢？還是查看其他教練課表？", preferredStyle: .alert)
+//        let alert = UIAlertController(title: "請選擇", message: "管理課表呢？還是查看其他教練課表？", preferredStyle: .alert)
+        let alert = UIAlertController(title: "請選擇", message: "管理班表呢？還是查看其他設計師課表？", preferredStyle: .alert)
         let managementAction = UIAlertAction(title: "管理", style: .default) { (_) in
             self.postNotification()
         }
